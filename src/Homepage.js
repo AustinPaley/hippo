@@ -44,7 +44,7 @@ class Homepage extends React.Component {
                     <div className="price">12</div>
                   </div>
                   <div className="item">
-                    <div className="name text-uppercase">Salmon Cake</div>
+                    <div className="name text-uppercase">Fish Cake</div>
                     <div className="descr">Blistered tomato, caper dill aioli</div>
                     <div className="price">15</div>
                   </div>
@@ -74,7 +74,7 @@ class Homepage extends React.Component {
                     <div className="price">13</div>
                   </div>
                   <div className="item">
-                    <div className="name text-uppercase">Caesar</div>
+                    <div className="name text-uppercase">Caesar Salad</div>
                     <div className="descr">Romaine, toasted croutons, shaved parmesan</div>
                     <div className="price">15</div>
                   </div>
@@ -82,11 +82,6 @@ class Homepage extends React.Component {
                     <div className="name text-uppercase">Arugula Salad</div>
                     <div className="descr">Apples, orange segments, goat cheese, roasted almonds, citrus vinaigrette</div>
                     <div className="price">17</div>
-                  </div>
-                  <div className="item">
-                    <div className="name text-uppercase">Mixed Baby Field Greens</div>
-                    <div className="descr">Pears, grapes, walnuts, shaved parmesan, tarragon vinaigrette</div>
-                    <div className="price">15</div>
                   </div>
                 </div>
               </div>
@@ -101,33 +96,19 @@ class Homepage extends React.Component {
                     <div className="price">27</div>
                   </div>
                   <div className="item">
-                    <div className="name text-uppercase">Coq au Vin*</div>
-                    <div className="descr">Red wine braised chicken, mushrooms, carrots, pearl onion over mashed potato</div>
-                    <div className="price">27</div>
-                  </div>
-                  <div className="item">
                     <div className="name text-uppercase">Duck Confit*</div>
                     <div className="descr">Duck leg, fingerling potato, haricot verts, caramelized onions, brandied cherry reduction</div>
                     <div className="price">24</div>
                   </div>
                   <div className="item">
-                    <div className="name text-uppercase">Capellini Pomodoro</div>
+                    <div className="name text-uppercase">Capellini Pomodoro Pasta</div>
                     <div className="descr">Goat cheese and pine nuts</div>
                     <div className="price">18</div>
-                    <div className="choice clearfix name-1 unit-0">
-                    <div className="name pull-left">Add Chicken or Shrimp for</div>
-                    <div className="price pull-left">9</div>
-                  </div>
                 </div>
                 <div className="item">
-                  <div className="name text-uppercase">Grilled Scottish Salmon*</div>
+                  <div className="name text-uppercase">Grilled Scottish Salmon* Fish</div>
                   <div className="descr">French lentils, thyme jus</div>
                   <div className="price">27</div>
-                </div>
-                <div className="item">
-                  <div className="name text-uppercase">Pan Roasted Yellowfin Tuna*</div>
-                  <div className="descr">Arugula salad, avocado mouse, sauteed broccoli, cilantro lime soy</div>
-                  <div className="price">29</div>
                 </div>
                 <div className="item">
                   <div className="name text-uppercase">Branzino*</div>
@@ -153,32 +134,6 @@ class Homepage extends React.Component {
                   <div className="name text-uppercase">FR Burger*</div>
                   <div className="descr">Pat la frieda, short rib and brisket blend, 8oz burger with bibb lettuce, tomato, red onion, house sauce served with hand-cut fries or salad</div>
                   <div className="price">19</div>
-                  <div className="choice clearfix name-1 unit-0">
-                  <div className="name pull-left">Add Applewood Smoked Bacon</div>
-                  <div className="price pull-left">3</div>
-                </div>
-                <div className="choice clearfix name-1 unit-0">
-                  <div className="name pull-left">Add Cheese, Avocado, Sauteed Onions</div>
-                  <div className="price pull-left">2</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="section dontsplit" data-slug="moules-frites">
-            <div className="title-wrapper">
-              <h2 className="title">Moules Frites</h2>
-              <div className="descr">$23. Served with hand-cut fries. Choice of broth</div>
-            </div>
-            <div className="items">
-              <div className="item">
-                <div className="name text-uppercase">Mariniere</div>
-              </div>
-              <div className="item">
-                <div className="name text-uppercase">Lobster</div>
-              </div>
-              <div className="item">
-                <div className="name text-uppercase">Catalan</div>
-                <div className="descr">Contains chorizo</div>
               </div>
             </div>
           </div>
@@ -190,6 +145,9 @@ class Homepage extends React.Component {
             <div className="items">
               <div className="item">
                 <div className="name text-uppercase">Sauteed Spinach</div>
+              </div>
+              <div className="item">
+                <div className="name text-uppercase">Hand-Cut Fries</div>
               </div>
               <div className="item">
                 <div className="name text-uppercase">Sauteed Broccoli</div>
@@ -206,30 +164,8 @@ class Homepage extends React.Component {
               <div className="item">
                 <div className="name text-uppercase">Sweet Potato Fries</div>
               </div>
-              <div className="item">
-                <div className="name text-uppercase">Hand-Cut Fries</div>
-              </div>
             </div>
           </div>
-          <div className="section dontsplit" data-slug="assiette-de-fromage">
-            <div className="title-wrapper">
-              <h2 className="title">Assiette de Fromage</h2>
-            </div>
-            <div className="items">
-              <div className="item">
-                <div className="name text-uppercase">Assiette De Fromage</div>
-                <div className="descr">Chef's daily selection of cheese, dried fruit, nuts and baguette</div>
-                <div className="choice clearfix name-1 unit-0">
-                <div className="name pull-left">Three Cheeses</div>
-                <div className="price pull-left">18</div>
-              </div>
-              <div className="choice clearfix name-1 unit-0">
-                <div className="name pull-left">Four Cheeses</div>
-                <div className="price pull-left">20</div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
       <div className="menu-footnote text-center">Vegetarian: may contain dairy or eggs. *Consuming raw or undercooked meats, poultry, seafood, shellfish or eggs may increase your risk of food borne ill</div>
     </div>

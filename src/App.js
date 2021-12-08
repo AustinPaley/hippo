@@ -5,7 +5,7 @@ import Customize from './Customize.js';
 import CustomizedHome from './CustomizedHome.js';
 import {
   BrowserRouter as Router,
-  Routes as Switch,
+  Switch,
   Route,
   Link
 } from "react-router-dom";
@@ -14,9 +14,13 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route name="home" path='/' element={<Homepage />}/>
-        <Route name="customize" path="/customize" element={<Customize />} />
-        <Route name="customizedHome" path="/customizedHome" element={<CustomizedHome />} />
+        <Route name="customizedHome" path="/customizedHome" component={CustomizedHome} />
+        <Route name="customize" path="/customize">
+          <Customize />
+        </Route>
+        <Route name="home" path='/'>
+          <Homepage />
+        </Route>
       </Switch>
     </Router>
       );
