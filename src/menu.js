@@ -21,7 +21,7 @@ const menuApps = [
     "title":"ESCARGOT EN CROUTE",
     "description":"Pernod, provencal butter, puff pastry",
     "price":"16",
-    "type":"fish"
+    "type":"snail"
   },
   {
     "title":"HOUSE MADE CHICKEN LIVER PATE",

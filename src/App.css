@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.button-holder{
+  text-align: center;
+}
+
 .customize-list{
   display: block;
 }
@@ -11,13 +15,16 @@
   font-weight: bold;
   text-align: center;
   cursor: pointer;
+  margin: 1rem;
+  text-decoration: none;
 }
 
-.customize-menu a{
-  color: green;
+.back-button{
+  color: red;
   font-weight: bold;
   text-align: center;
   cursor: pointer;
+  margin: 1rem;
   text-decoration: none;
 }
 

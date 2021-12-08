@@ -18,8 +18,7 @@ class CustomizedHome extends React.Component {
   }
 
   componentDidMount(){
-    var likesArray = this.props.location.state.data.map((obj => Object.values(obj))).flat()
-    console.log(likesArray)
+    var likesArray = this.props.location.state.data.sort((obja, objb) => Object.keys(obja) - Object.keys(objb)).map((obj => Object.values(obj))).flat()
     var customizedApps = []
     var customizedEntrees = []
     var customizedSides = []
@@ -47,11 +46,11 @@ class CustomizedHome extends React.Component {
   }
 
   render() {
-    console.log(this.state)
     return (
       <div>
-      <div className="customize-menu">
-        <Link to={{pathname: `/customize`}}>Customize My Menu</Link>
+      <div className="button-holder">
+        <Link to={{pathname: `/`}} className="back-button">Go back to regular menu</Link>
+        <Link to={{pathname: `/customize`}} className="customize-menu">Customize My Menu</Link>
       </div>
       <section className="themed themed-  show-separator-False page-layout-whole subpage  singleplatformmenupage odd">
         <section className="sp-menu-wrapper">
@@ -69,7 +68,7 @@ class CustomizedHome extends React.Component {
                 </div>
                 <div className="items">
                   {this.state.customizedApps.map((obj, index) =>
-                    <React.Fragment>
+                    <React.Fragment key={obj.title + index}>
                       <div className="item">
                         <div className="name text-uppercase">{obj.title}</div>
                         <div className="descr">{obj.description}</div>
@@ -85,7 +84,7 @@ class CustomizedHome extends React.Component {
                 </div>
                 <div className="items">
                   {this.state.customizedEntrees.map((obj, index) =>
-                    <React.Fragment>
+                    <React.Fragment key={obj.title + index}>
                       <div className="item">
                         <div className="name text-uppercase">{obj.title}</div>
                         <div className="descr">{obj.description}</div>
@@ -102,7 +101,7 @@ class CustomizedHome extends React.Component {
             </div>
             <div className="items">
               {this.state.customizedSides.map((obj, index) =>
-                <React.Fragment>
+                <React.Fragment key={obj.title + index}>
                   <div className="item">
                     <div className="name text-uppercase">{obj.title}</div>
                     <div className="descr">{obj.description}</div>
