@@ -2,6 +2,25 @@
   text-align: center;
 }
 
+.customize-list{
+  display: block;
+}
+
+.customize-menu{
+  color: green;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+.customize-menu a{
+  color: green;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
